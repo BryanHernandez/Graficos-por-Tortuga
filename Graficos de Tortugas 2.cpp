@@ -10,7 +10,7 @@ int main(){
 	int tabla [20][20]={0};
 	int activar = 0;
 	int pluma = 0;
-	int girar = 0; //Girar
+	int girar = 0; 
 	int dato;
 	int tortuga [2]={0};
 	int posicion = 6;
@@ -73,8 +73,8 @@ int main(){
 			girar=1;
 		}
 	}
-	if (activar==5){//Pluma horientacion
-	////Agregar codigo para posicionar>>>>>>>>??????
+	if (activar==5){//Avanza la tortuga
+	
 	cout<<"Cuanto quieres avanzar";
 	cin>>dato;
 	cout<<endl;
@@ -88,7 +88,7 @@ int main(){
 	tortuga [0]= tortuga[0]+dato;// Cambio de posicon
 	}
 	
-	if(posicion==8){//mover abajo
+	if(posicion==8){//mover arriba
 	if (pluma==1){//Valida pluma
 	for (int i = tortuga[0];i>= tortuga[0]-dato;i--)
 	tabla[i][tortuga[0]]=1;
@@ -122,7 +122,7 @@ int main(){
 	cout <<"Tortuga en "<<tortuga[0]<<" "<<tortuga[1]<<endl;
 	}
 }
-  //While
+  //While Fin del programa
 cin.get();
 return(0);
 }
